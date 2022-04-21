@@ -3,7 +3,7 @@ html{
     background-color: $background;
     background-image: url(".../images/fond.png");
     margin: auto;
-    font: $font-family;
+    font: $font_family;
 }
 
 ul{
@@ -30,7 +30,7 @@ h1 {
 
 h2{
     background-color: $secondary_color;
-    font-size: 1.5em;
+    @include main_font;
     @include title_border;
     @include radius;
     @include heading_shadow;
@@ -47,21 +47,20 @@ h2{
 }
 
 
-ul{
+aside{
     .cadre {
         background-color:$primary_color;
         border : dashed black;
         @include radius;
-        font-size : 1.5em;
+        @include main_font;
         width: 45%;
         padding-top: 1%;
         padding-bottom: 1%;
-    }
-    
-    .petit_cadre{
+      
+        &.petit_cadre{
         width : 100%;
         position: relative;
-        }
+        }}
 
 #liseret, .contenu {
     display: inline-block;

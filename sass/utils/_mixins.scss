@@ -7,3 +7,7 @@
 @mixin title_border{
     border : 2px solid black;
 }
+@mixin main_font{
+    color: black;
+    font-size: 2em;
+}
