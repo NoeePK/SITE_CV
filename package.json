@@ -1,0 +1,19 @@
+{
+  "name": "site_cv",
+  "version": "1.0.0",
+  "description": "Site présentant mon cv",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass --watch main.scss:./compiled/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoeePK/SITE_CV.git"
+  },
+  "author": "NoeePK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoeePK/SITE_CV/issues"
+  },
+  "homepage": "https://github.com/NoeePK/SITE_CV#readme"
+}

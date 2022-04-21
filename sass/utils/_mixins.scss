@@ -1,0 +1,9 @@
+@mixin radius{
+    border-radius: 5px;
+}
+@mixin heading_shadow{
+    box-shadow: 0 5px 5px;
+}
+@mixin title_border{
+    border : 2px solid black;
+}
