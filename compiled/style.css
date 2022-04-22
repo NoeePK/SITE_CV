@@ -4,10 +4,18 @@ header {
   align-items: flex-end;
   justify-content: space-between;
   align-items: baseline;
+  border-bottom: dashed;
 }
 header .logo_titre {
   display: flex;
   flex-direction: column;
+}
+header .menu {
+  width: fit-content;
+}
+header .menu.menu_li {
+  display: flex;
+  flex-direction: row;
 }
 
 /*
@@ -21,6 +29,7 @@ header img{
 nav ul {
   list-style-type: none;
   margin-right: 10%;
+  width: 60%;
 }
 nav ul a {
   font-family: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap";

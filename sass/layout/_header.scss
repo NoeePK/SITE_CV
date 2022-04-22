@@ -4,11 +4,20 @@ header {
     align-items: flex-end;
     justify-content: space-between;
     align-items: baseline;
+    border-bottom: dashed;
         .logo_titre {
             display: flex;
             flex-direction: column;}
+            
+        
+        .menu{
+            width: fit-content;
+        &.menu_li{
+            display: flex;
+            flex-direction: row;
         }
-
+        }
+        }
 /*
 header img{
     float: right;
