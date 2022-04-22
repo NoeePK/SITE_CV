@@ -1,5 +1,5 @@
 
-html{
+body{
     background-color: $background;
     background-image: url(".../images/fond.png");
     margin: auto;
@@ -11,7 +11,8 @@ ul{
     text-align: justify;
 }
 
-.contenu img{
+
+header img{
     float: right;
     @include title_border;
     @include radius;
