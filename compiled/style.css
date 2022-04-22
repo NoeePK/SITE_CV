@@ -3,16 +3,34 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  align-items: baseline;
   border-bottom: dashed;
 }
 header .logo_titre {
   display: flex;
   flex-direction: column;
 }
+header .logo img {
+  width: 10rem;
+  height: 10rem;
+  box-shadow: 0 5px 5px;
+  background-color: rgb(255, 255, 255);
+  font-size: 2em;
+  color: black;
+  text-shadow: 0 5px 5px rgb(206, 162, 108);
+  border: 2px solid black;
+  padding: 0 1rem 0 1rem;
+  width: fit-content;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
+  margin: 5% 0 5% 10%;
+}
 
 .menu {
   width: fit-content;
+  display: flex;
+  justify-content: flex-end;
 }
 .menu ul {
   display: flex;
@@ -24,18 +42,8 @@ header .logo_titre {
   justify-content: space-around;
 }
 
-/*
-header img{
-    float: right;
-    @include title_border;
-    @include radius;
-    @include heading_shadow;
-}
-*/
 nav ul {
   list-style-type: none;
-  margin-right: 10%;
-  width: 60%;
 }
 nav ul a {
   font-family: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap";
@@ -54,23 +62,19 @@ nav ul a {
   text-decoration: none;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
 }
 nav ul a:hover {
-  font-weight: bold;
+  background: rgb(206, 162, 108);
   text-decoration: double;
 }
 
 body {
   background-color: rgb(255, 255, 255);
-  background-image: url(".../images/fond.png");
-  margin: auto;
   font: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap";
   display: inline-block;
   vertical-align: top;
-  margin-left: 5%;
-  width: 85%;
-  position: center;
+  margin-left: 10%;
+  width: 80%;
 }
 
 html {
@@ -79,6 +83,22 @@ html {
 
 p {
   text-align: justify;
+  line-height: 1.3;
+}
+
+.banner img {
+  width: 100%;
+  border-bottom: dashed black;
+}
+
+aside div {
+  background-color: rgb(222, 184, 135);
+  border: dashed black;
+  color: black;
+  font-size: 1.5em;
+  text-align: justify;
+  width: fit-content;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .cadres {
@@ -110,8 +130,8 @@ h1, h2 {
   border-radius: 5px;
 }
 
-@MEDIA all and (max-device-width: 480px) {
-  #liseret {
+@media all and (max-device-width: 480px) {
+  .logo img {
     display: none;
   }
 }

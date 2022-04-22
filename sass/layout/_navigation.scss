@@ -1,19 +1,19 @@
 nav{
     ul{
         list-style-type: none;
-        margin-right: 10%;
-        width: 60%;
-    
+        
+            
     a{
         font-family: $font_family;
         @include heading_box;
         text-decoration: none;
         display: flex;
         flex-direction: row;
-        align-items: baseline;
+        
+        
         
             &:hover{
-            font-weight: bold;
+            background: $secondary_color;
             text-decoration: double;
                         
         }
