@@ -1,0 +1,7 @@
+footer {
+    background-color: $primary_color;
+    @include main_font;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    border-top: dashed;}

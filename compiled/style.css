@@ -42,6 +42,17 @@ header .logo img {
   justify-content: space-around;
 }
 
+footer {
+  background-color: rgb(222, 184, 135);
+  color: black;
+  font-size: 1.5em;
+  text-align: justify;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  border-top: dashed;
+}
+
 nav ul {
   list-style-type: none;
 }
