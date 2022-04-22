@@ -4,7 +4,7 @@
   "description": "Site présentant mon cv",
   "main": "script.js",
   "scripts": {
-    "sass": "sass --watch main.scss:./compiled/style.css"
+    "sass": "sass --watch sass/index.scss:./compiled/style.css"
   },
   "repository": {
     "type": "git",
