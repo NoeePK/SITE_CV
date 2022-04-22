@@ -1,20 +1,62 @@
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/*
+header img{
+    float: right;
+    @include title_border;
+    @include radius;
+    @include heading_shadow;
+}
+*/
+nav a {
+  font-family: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap";
+  color: black;
+  font-size: 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav a ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+nav a ul li {
+  margin-right: 5%;
+}
+nav a ul lia:hover {
+  font-weight: bold;
+  text-decoration: double;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   background-image: url(".../images/fond.png");
   margin: auto;
   font: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap";
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5%;
+  width: 85%;
+  position: relative;
 }
 
 ul {
   margin: 0%;
   text-align: justify;
 }
-
-header img {
-  float: right;
-  border: 2px solid black;
+ul .cadre {
+  background-color: rgb(222, 184, 135);
+  border: dashed black;
   border-radius: 5px;
-  box-shadow: 0 5px 5px;
+  color: black;
+  font-size: 2em;
+  width: 45%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 h1 {
@@ -46,30 +88,8 @@ h2 {
   width: 90%;
 }
 
-ul .cadre {
-  background-color: rgb(222, 184, 135);
-  border: dashed black;
-  border-radius: 5px;
-  color: black;
-  font-size: 2em;
-  width: 45%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-ul .contenu {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 5%;
-  width: 85%;
-  position: relative;
-}
-ul .cote_droit {
-  position: absolute;
-  bottom: 20%;
-  right: 2%;
-}
 @MEDIA all and (max-device-width: 480px) {
-  ul #liseret {
+  #liseret {
     display: none;
   }
 }

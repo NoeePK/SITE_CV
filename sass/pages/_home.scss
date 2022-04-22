@@ -4,20 +4,27 @@ body{
     background-image: url(".../images/fond.png");
     margin: auto;
     font: $font_family;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+    width: 85%;
+    position: relative;
 }
 
 ul{
     margin: 0%;
     text-align: justify;
+    .cadre {
+        background-color:$primary_color;
+        border : dashed black;
+        @include radius;
+        @include main_font;
+        width: 45%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
 }
 
-
-header img{
-    float: right;
-    @include title_border;
-    @include radius;
-    @include heading_shadow;
-}
 
 h1 {
     @include heading_shadow;
@@ -47,32 +54,6 @@ h2{
     width: 90%;
 }
 
-
-ul{
-    .cadre {
-        background-color:$primary_color;
-        border : dashed black;
-        @include radius;
-        @include main_font;
-        width: 45%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-
-.contenu {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 5%;
-    width: 85%;
-    position: relative;
-}
-
-.cote_droit{
-    position: absolute;
-    bottom : 20%;
-    right: 2%;
-    }
-
 @MEDIA all and (max-device-width: 480px){
     #liseret{
         display: none;
@@ -81,7 +62,5 @@ ul{
 }
 
 @media all and (max-device-width: 480px){
-
-}
 
 }
