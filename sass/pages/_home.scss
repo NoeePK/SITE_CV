@@ -1,6 +1,6 @@
 
 body{
-    background-color: $background;
+    background-color: $background_body;
     background-image: url(".../images/fond.png");
     margin: auto;
     font: $font_family;
@@ -11,6 +11,10 @@ body{
     position: center;
 }
 
+html{
+    background-color: $secondary_color;
+}
+
 p{
     text-align: justify;
 }
@@ -19,9 +23,7 @@ p{
     margin: 0%;
     @include cadres;
     @include main_font;
-       
 }
-
 
 h1, h2{
     @include heading_box;
