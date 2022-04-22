@@ -3,6 +3,7 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  align-items: baseline;
 }
 header .logo_titre {
   display: flex;
@@ -38,6 +39,7 @@ nav ul a {
   text-decoration: none;
   display: flex;
   flex-direction: row;
+  align-items: baseline;
 }
 nav ul a:hover {
   font-weight: bold;
@@ -57,20 +59,11 @@ body {
 }
 
 p {
-  margin: 0%;
-  text-align: justify;
-  background-color: rgb(222, 184, 135);
-  border: dashed black;
-  color: black;
-  font-size: 1.5em;
-  text-align: justify;
-  width: fit-content;
-  padding: 1rem 1rem 1rem 1rem;
-  color: black;
-  font-size: 1.5em;
   text-align: justify;
 }
-p.cadres {
+
+.cadres {
+  margin: 0%;
   background-color: rgb(222, 184, 135);
   border: dashed black;
   color: black;
@@ -78,6 +71,9 @@ p.cadres {
   text-align: justify;
   width: fit-content;
   padding: 1rem 1rem 1rem 1rem;
+  color: black;
+  font-size: 1.5em;
+  text-align: justify;
 }
 
 h1, h2 {

@@ -1,13 +1,28 @@
-@mixin radius{
-    border-radius: 5px;
-}
-@mixin heading_shadow{
-    box-shadow: 0 5px 5px;
-}
-@mixin title_border{
-    border : 2px solid black;
-}
+
 @mixin main_font{
     color: black;
+    font-size: 1.5em;
+    text-align: justify;
+}
+@mixin heading_box{
+    box-shadow: 0 5px 5px;
+    background-color: rgb(255, 255, 255);
     font-size: 2em;
+    color:black;
+    text-shadow: 0 5px 5px $secondary_color;
+    border : 2px solid black;
+    padding: 0 1rem 0 1rem;
+    width: fit-content;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+}
+
+@mixin cadres{
+        background-color:$primary_color;
+        border : dashed black;
+        @include main_font;
+        width: fit-content;
+        padding: 1rem 1rem 1rem 1rem;
 }

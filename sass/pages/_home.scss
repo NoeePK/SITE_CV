@@ -8,47 +8,26 @@ body{
     vertical-align: top;
     margin-left: 5%;
     width: 85%;
-    position: relative;
+    position: center;
 }
 
-ul{
-    margin: 0%;
+p{
     text-align: justify;
-    .cadre {
-        background-color:$primary_color;
-        border : dashed black;
-        @include radius;
-        @include main_font;
-        width: 45%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
 }
 
-
-h1 {
-    @include heading_shadow;
-    background-color: $secondary_color;
-    font-size: 2.5em;
-    @include title_border;
-    @include radius; 
-    width: 35%;
-    text-align: center;
-}
-
-h2{
-    background-color: $secondary_color;
+.cadres{
+    margin: 0%;
+    @include cadres;
     @include main_font;
-    @include title_border;
-    @include radius;
-    @include heading_shadow;
-    width: 20%;
-    padding-left: 2%;
+       
 }
 
-.sous_titre{
-    width: 30%;
+
+h1, h2{
+    @include heading_box;
 }
+
+
 
 
 @MEDIA all and (max-device-width: 480px){
