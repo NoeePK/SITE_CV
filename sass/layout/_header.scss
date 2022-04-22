@@ -8,15 +8,20 @@ header {
         .logo_titre {
             display: flex;
             flex-direction: column;}
+    }
             
-        
-        .menu{
-            width: fit-content;
-        &.menu_li{
+.menu{
+    width: fit-content;
+        ul{
+            display: flex;
+            justify-content: flex-end;
+        }
+        li{
             display: flex;
             flex-direction: row;
-        }
-        }
+            justify-content:space-around;
+
+            }
         }
 /*
 header img{

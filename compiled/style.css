@@ -10,12 +10,18 @@ header .logo_titre {
   display: flex;
   flex-direction: column;
 }
-header .menu {
+
+.menu {
   width: fit-content;
 }
-header .menu.menu_li {
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu li {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 /*
