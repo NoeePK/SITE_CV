@@ -1,8 +1,12 @@
-header{
+header {
+    background-color: $primary_color;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-}
+        .logo_titre {
+            display: flex;
+            flex-direction: column;}
+        }
 
 /*
 header img{
