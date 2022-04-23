@@ -65,7 +65,7 @@ header .logo img:hover {
 footer {
   background-color: rgb(222, 184, 135);
   color: black;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: justify;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 2%;
@@ -102,12 +102,12 @@ nav ul a:hover {
 
 #mailto {
   color: black;
-  font-size: 1.4em;
+  font-size: 1.6em;
   text-decoration: none;
 }
 #mailto:hover {
   background-color: rgb(206, 162, 108);
-  transform: scale(1);
+  transform: scale(1.5);
   border: 3px solid black;
   padding: 2% 2% 2% 2%;
 }
@@ -158,7 +158,7 @@ p {
 }
 
 .experiences {
-  width: 45%;
+  width: 40%;
   order: 1;
 }
 
@@ -171,9 +171,9 @@ p {
   margin: 0%;
   background-color: rgb(222, 184, 135);
   border: dashed black;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 2rem;
   color: black;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: justify;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
