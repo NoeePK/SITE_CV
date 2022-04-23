@@ -1,14 +1,12 @@
 nav{
     ul{
-        list-style-type: none;
-        
+        list-style-type: none;   
             
     a{
         @include heading_box;
         text-decoration: none;
         display: flex;
         flex-direction: row;
-        
         
         
             &:hover{

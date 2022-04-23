@@ -9,13 +9,14 @@
     box-shadow: 0 5px 5px;
     background-color: rgb(255, 255, 255);
     font-size: 2em;
-    font-family: '3dumbregular', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:black;
     text-shadow: 5px 5px 5px rgb(92, 87, 87);
     border : 2px solid black;
     padding: 0 1rem 0 1rem;
     width: fit-content;
     text-transform: uppercase;
+    font-weight: normal;
     text-align: center;
     border-radius: 5px;
 }
@@ -24,7 +25,6 @@
 @mixin cadres{
         background-color:$primary_color;
         border : dashed black;
-        @include main_font;
         width: fit-content;
         padding: 1rem 1rem 1rem 1rem;
 }

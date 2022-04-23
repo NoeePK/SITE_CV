@@ -1,10 +1,12 @@
 
 body{
     background-color: $background_body;
+    display: flex;
     display: inline-block;
     vertical-align: top;
     margin-left:  10%;
-    width: 80%; 
+    width: 80%;
+    
 }
 
 html{
@@ -19,6 +21,13 @@ p{
 .conteneur {
     display: flex;
     flex-direction: row-reverse;
+    
+    justify-content: space-between;
+
+}
+
+aside{
+    width: 35%;
 }
 
 .banner img{
@@ -26,9 +35,7 @@ p{
     border-bottom: dashed black;
 }
 
-aside div{
-    @include cadres;
-    }
+
 
 .cadres{
     margin: 0%;
@@ -38,16 +45,21 @@ aside div{
 
 h1, h2{
     @include heading_box;
-    font-family: '3dumbregular', Verdana, Geneva, Tahoma, sans-serif ;
     }
 
 h3{
+    font-size: 1em;
     font-weight: bold;
-    text-decoration: dashed;
-    font-size: 1.7em;
+    text-decoration: underline;
 }
 
+
+
 @media all and (max-device-width: 480px){
+    .conteneur{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .logo img{
         display: none;
     }
