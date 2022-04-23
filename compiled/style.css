@@ -93,8 +93,8 @@ body {
   display: flex;
   display: inline-block;
   vertical-align: top;
-  margin-left: 10%;
-  width: 80%;
+  margin-left: 5%;
+  width: 90%;
 }
 
 html {
@@ -112,8 +112,22 @@ p {
   justify-content: space-between;
 }
 
-aside {
-  width: 35%;
+.plan_action {
+  width: 65%;
+  margin-right: 5%;
+  height: fit-content;
+}
+
+.projet_p {
+  width: 30%;
+}
+
+.formations {
+  order: 2;
+}
+
+.experiences {
+  order: 1;
 }
 
 .banner img {
