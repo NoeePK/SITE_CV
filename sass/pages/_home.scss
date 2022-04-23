@@ -16,6 +16,11 @@ p{
     line-height: 1.3;
 }
 
+.conteneur {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .banner img{
     width: 100%;
     border-bottom: dashed black;
@@ -34,6 +39,7 @@ aside div{
 h1, h2{
     @include heading_box;
     font-family: '3dumbregular', Verdana, Geneva, Tahoma, sans-serif ;
+    text-shadow: 6px 6px 6px blue;
 }
 
 h3{
