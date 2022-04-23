@@ -1,13 +1,49 @@
+
+.a_propos{
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+
+
 #mailto{
     color: black;
-    font-size: 1.6em;
+    font-size: 1.5em;
     text-decoration: none;
     
-
+    border: $primary_color;
+    padding: 2% 3% 2% 3%;
+    
+    border-radius: 2rem;
         &:hover{
-            background-color: $secondary_color;
+            background-color: $primary_color;
             transform: scale(1.50);
+            border: 3px solid black;  
+            background-color: white;          
+}}
+
+#phone{
+    color: black;
+    font-size: 1.5em;
+    margin: 1rem 1rem 1rem 1rem;
+    border: $primary_color;
+    padding: 2% 3% 2% 3%;
+    
+    border-radius: 2rem;
+        &:hover{
+            background-color: $primary_color;
             border: 3px solid black;
-            padding: 2% 2% 2% 2%;
+            background-color: white;           
+}}
+
+.contacts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+        & aside{
+            @include cadres;
+
         }
 }

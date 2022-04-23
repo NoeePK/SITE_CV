@@ -100,16 +100,49 @@ nav ul a:hover {
   background: rgb(206, 162, 108);
 }
 
+.a_propos {
+  width: 40%;
+  margin-bottom: 5%;
+}
+
 #mailto {
   color: black;
-  font-size: 1.6em;
+  font-size: 1.5em;
   text-decoration: none;
+  border: rgb(222, 184, 135);
+  padding: 2% 3% 2% 3%;
+  border-radius: 2rem;
 }
 #mailto:hover {
-  background-color: rgb(206, 162, 108);
+  background-color: rgb(222, 184, 135);
   transform: scale(1.5);
   border: 3px solid black;
-  padding: 2% 2% 2% 2%;
+  background-color: white;
+}
+
+#phone {
+  color: black;
+  font-size: 1.5em;
+  margin: 1rem 1rem 1rem 1rem;
+  border: rgb(222, 184, 135);
+  padding: 2% 3% 2% 3%;
+  border-radius: 2rem;
+}
+#phone:hover {
+  background-color: rgb(222, 184, 135);
+  border: 3px solid black;
+  background-color: white;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contacts aside {
+  background-color: rgb(222, 184, 135);
+  border: dashed black;
+  padding: 1rem 1rem 1rem 2rem;
 }
 
 body {
@@ -132,7 +165,7 @@ p {
 
 .conteneur {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
   padding: 0 3% 0 3%;
 }
@@ -141,10 +174,12 @@ p {
   width: 65%;
   margin-right: 5%;
   height: fit-content;
+  order: 1;
 }
 
 .projet_p {
   width: 35%;
+  order: 2;
 }
 .projet_p.projet_p img {
   width: 80%;
@@ -154,12 +189,10 @@ p {
 
 .formations {
   width: 45%;
-  order: 2;
 }
 
 .experiences {
   width: 40%;
-  order: 1;
 }
 
 .banner img {

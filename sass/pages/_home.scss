@@ -20,7 +20,7 @@ p{
 
 .conteneur {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     padding: 0 3% 0 3%;
 }
@@ -29,27 +29,26 @@ p{
     width: 65%;
     margin-right: 5%;
     height: fit-content;
+    order: 1;
+
 }
 
 .projet_p{
     width: 35%;
+    order: 2;
     &.projet_p img{
         width: 80%;
         height: 80%;
         margin-left: 10%;
-    }
+        }
     
 }
 
 .formations{
-    width: 45%;
-    order:2;
-    
+    width: 45%;    
 }
 .experiences{
     width: 40%;
-    order:1;
-
 }
 
 
@@ -68,7 +67,7 @@ p{
 
 h1, h2{
     @include heading_box;
-    }
+}
 
 h3{
     font-size: 1em;
