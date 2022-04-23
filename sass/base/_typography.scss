@@ -1,1 +1,13 @@
+/*Transformer en fonction si possible*/
+/*POURQUOI CA FONCTIONNE PAAAAAAAS*/
 
+li{
+    a{
+    color:black;
+    text-decoration: none;
+    
+
+    &:hover{
+        border: 2px dashed black;
+    }
+}}

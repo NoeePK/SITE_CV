@@ -8,7 +8,7 @@
 @mixin heading_box{
     box-shadow: 0 5px 5px;
     background-color: rgb(255, 255, 255);
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:black;
     text-shadow: 5px 5px 5px rgb(92, 87, 87);
@@ -21,10 +21,15 @@
     border-radius: 5px;
 }
 
+@mixin liens{
+    color: black;
+    background-color: $secondary_color;
+    text-decoration: none;
+}
+
 
 @mixin cadres{
         background-color:$primary_color;
         border : dashed black;
-        width: fit-content;
         padding: 1rem 1rem 1rem 1rem;
 }

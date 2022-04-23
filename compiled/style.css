@@ -4,6 +4,16 @@
   font-weight: normal;
   font-style: normal;
 }
+/*Transformer en fonction si possible*/
+/*POURQUOI CA FONCTIONNE PAAAAAAAS*/
+li a {
+  color: black;
+  text-decoration: none;
+}
+li a:hover {
+  border: 2px dashed black;
+}
+
 header {
   background-color: rgb(222, 184, 135);
   display: flex;
@@ -20,7 +30,7 @@ header .logo img {
   height: 10rem;
   box-shadow: 0 5px 5px;
   background-color: rgb(255, 255, 255);
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   text-shadow: 5px 5px 5px rgb(92, 87, 87);
@@ -32,6 +42,9 @@ header .logo img {
   text-align: center;
   border-radius: 5px;
   margin: 5% 0 5% 10%;
+}
+header .logo img:hover {
+  transform: rotate(10deg);
 }
 
 .menu {
@@ -68,7 +81,7 @@ nav ul {
 nav ul a {
   box-shadow: 0 5px 5px;
   background-color: rgb(255, 255, 255);
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   text-shadow: 5px 5px 5px rgb(92, 87, 87);
@@ -85,7 +98,6 @@ nav ul a {
 }
 nav ul a:hover {
   background: rgb(206, 162, 108);
-  text-decoration: double;
 }
 
 body {
@@ -110,6 +122,7 @@ p {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  padding: 0 3% 0 3%;
 }
 
 .plan_action {
@@ -119,14 +132,21 @@ p {
 }
 
 .projet_p {
-  width: 30%;
+  width: 35%;
+}
+.projet_p.projet_p img {
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
 }
 
 .formations {
+  width: 45%;
   order: 2;
 }
 
 .experiences {
+  width: 45%;
   order: 1;
 }
 
@@ -139,7 +159,6 @@ p {
   margin: 0%;
   background-color: rgb(222, 184, 135);
   border: dashed black;
-  width: fit-content;
   padding: 1rem 1rem 1rem 1rem;
   color: black;
   font-size: 1.5em;
@@ -150,7 +169,7 @@ p {
 h1, h2 {
   box-shadow: 0 5px 5px;
   background-color: rgb(255, 255, 255);
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   text-shadow: 5px 5px 5px rgb(92, 87, 87);
