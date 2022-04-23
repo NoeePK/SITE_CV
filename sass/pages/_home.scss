@@ -39,8 +39,7 @@ aside div{
 h1, h2{
     @include heading_box;
     font-family: '3dumbregular', Verdana, Geneva, Tahoma, sans-serif ;
-    text-shadow: 6px 6px 6px blue;
-}
+    }
 
 h3{
     font-weight: bold;
