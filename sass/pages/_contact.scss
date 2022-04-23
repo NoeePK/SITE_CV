@@ -1,0 +1,13 @@
+#mailto{
+    color: black;
+    font-size: 1.4em;
+    text-decoration: none;
+    
+
+        &:hover{
+            background-color: $secondary_color;
+            transform: scale(1);
+            border: 3px solid black;
+            padding: 2% 2% 2% 2%;
+        }
+}
