@@ -1,3 +1,11 @@
+@font-face {
+    font-family: '3dumbregular';
+    src: url('3Dumb-webfont.woff2') format('woff2'),
+         url('3Dumb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 @import"utils/mixins";
 @import"utils/variables";
 @import"utils/functions";
@@ -10,5 +18,3 @@
 @import"pages/contact";
 @import"pages/home";
 @import"components/buttons";
-@import"themes/bday";
-@import"themes/xmas";
