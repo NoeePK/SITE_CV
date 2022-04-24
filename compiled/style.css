@@ -42,9 +42,10 @@ header .logo img {
   text-align: center;
   border-radius: 5px;
   margin: 5% 0 5% 10%;
+  transition: transform 1s;
 }
 header .logo img:hover {
-  transform: rotate(10deg);
+  transform: rotate(-10deg);
 }
 
 .menu {
@@ -105,44 +106,28 @@ nav ul a:hover {
   margin-bottom: 5%;
 }
 
-#mailto {
-  color: black;
-  font-size: 1.5em;
-  text-decoration: none;
-  border: rgb(222, 184, 135);
-  padding: 2% 3% 2% 3%;
-  border-radius: 2rem;
-}
-#mailto:hover {
-  background-color: rgb(222, 184, 135);
-  transform: scale(1.5);
-  border: 3px solid black;
-  background-color: white;
-}
-
-#phone {
-  color: black;
-  font-size: 1.5em;
-  margin: 1rem 1rem 1rem 1rem;
-  border: rgb(222, 184, 135);
-  padding: 2% 3% 2% 3%;
-  border-radius: 2rem;
-}
-#phone:hover {
-  background-color: rgb(222, 184, 135);
-  border: 3px solid black;
-  background-color: white;
-}
-
 .contacts {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.contacts aside {
-  background-color: rgb(222, 184, 135);
-  border: dashed black;
-  padding: 1rem 1rem 1rem 2rem;
+
+.btn_contact {
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none;
+  border: 3px solid rgb(222, 184, 135);
+  padding: 2% 3% 2% 3%;
+  width: fit-content;
+  border-radius: 2rem;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.btn_contact:hover {
+  transform: scale(1.5);
+  border: 3px solid white;
+  background-color: rgb(206, 162, 108);
+  color: white;
 }
 
 body {

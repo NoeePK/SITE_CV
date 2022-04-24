@@ -7,15 +7,16 @@ header {
         .logo_titre {
             display: flex;
             flex-direction: column;
-            }
-            
+            }          
         .logo img{
             width: 10rem;
             height: 10rem;
             @include heading_box;
             margin: 5% 0 5% 10%;
+            transition: transform 1s;
+            
             &:hover{
-                transform: rotate(10deg);
+                transform: rotate(-10deg);
             }
         }
 }

@@ -5,45 +5,28 @@
 }
 
 
-
-#mailto{
-    color: black;
-    font-size: 1.5em;
-    text-decoration: none;
-    
-    border: $primary_color;
-    padding: 2% 3% 2% 3%;
-    
-    border-radius: 2rem;
-        &:hover{
-            background-color: $primary_color;
-            transform: scale(1.50);
-            border: 3px solid black;  
-            background-color: white;          
-}}
-
-#phone{
-    color: black;
-    font-size: 1.5em;
-    margin: 1rem 1rem 1rem 1rem;
-    border: $primary_color;
-    padding: 2% 3% 2% 3%;
-    
-    border-radius: 2rem;
-        &:hover{
-            background-color: $primary_color;
-            border: 3px solid black;
-            background-color: white;           
-}}
-
 .contacts{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     
-
-        & aside{
-            @include cadres;
-
-        }
 }
+
+.btn_contact{
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    border: 3px solid $primary_color;
+    padding: 2% 3% 2% 3%;
+    width: fit-content;
+    border-radius: 2rem;
+    transform:scale(1);
+    transition: transform 400ms;
+    
+        &:hover{
+                        
+            transform: scale(1.50);
+            border: 3px solid white;  
+            background-color: $secondary_color;
+            color: white;         
+}}
