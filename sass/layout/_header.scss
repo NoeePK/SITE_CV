@@ -13,10 +13,11 @@ header {
             height: 10rem;
             @include heading_box;
             margin: 5% 0 5% 10%;
-            transition: transform 1s;
+            transition: transform 1s ease-in-out;
             
             &:hover{
                 transform: rotate(-10deg);
+                transform: translate(150px, -2vh)
             }
         }
 }

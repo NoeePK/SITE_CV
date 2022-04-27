@@ -42,10 +42,11 @@ header .logo img {
   text-align: center;
   border-radius: 5px;
   margin: 5% 0 5% 10%;
-  transition: transform 1s;
+  transition: transform 1s ease-in-out;
 }
 header .logo img:hover {
   transform: rotate(-10deg);
+  transform: translate(150px, -2vh);
 }
 
 .menu {
@@ -110,24 +111,6 @@ nav ul a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-.btn_contact {
-  color: black;
-  font-size: 1.5em;
-  text-decoration: none;
-  border: 3px solid rgb(222, 184, 135);
-  padding: 2% 3% 2% 3%;
-  width: fit-content;
-  border-radius: 2rem;
-  transform: scale(1);
-  transition: transform 400ms;
-}
-.btn_contact:hover {
-  transform: scale(1.5);
-  border: 3px solid white;
-  background-color: rgb(206, 162, 108);
-  color: white;
 }
 
 body {
@@ -227,6 +210,25 @@ h3 {
   .logo img {
     display: none;
   }
+}
+.btn_contact {
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none;
+  border: 3px solid rgb(222, 184, 135);
+  padding: 2% 3% 2% 3%;
+  background-color: rgba(165, 124, 77, 0);
+  width: fit-content;
+  border-radius: 2rem;
+  transform: scale(1);
+  transition: transform 450ms, background-color 300ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.btn_contact:hover {
+  transform: scale(1.5);
+  border: 3px solid white;
+  background-color: rgb(165, 124, 77);
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+
+.btn_contact{
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    border: 3px solid $primary_color;
+    padding: 2% 3% 2% 3%;
+    background-color: $btn_start;
+    width: fit-content;
+    border-radius: 2rem;
+    transform:scale(1);
+    transition:  transform 450ms, background-color 300ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+    
+        &:hover{
+                        
+            transform: scale(1.50);
+            border: 3px solid white;  
+            background-color: $btn_end;
+            color: white;         
+}}
